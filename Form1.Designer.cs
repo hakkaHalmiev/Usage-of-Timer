@@ -64,32 +64,37 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(21, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(14, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(71, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(14, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.label3.Text = "0";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 49);
+            this.label4.Location = new System.Drawing.Point(118, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(14, 16);
             this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.label4.Text = "0";
             // 
             // Form1
             // 

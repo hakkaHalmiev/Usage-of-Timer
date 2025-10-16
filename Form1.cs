@@ -17,6 +17,10 @@ namespace Usage_of_Timer
             InitializeComponent();
         }
         int sayac = 0;
+        int saat = 0;
+        int dakika = 0;
+        int saniye = 0;
+
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -36,6 +40,29 @@ namespace Usage_of_Timer
             }
 
 
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            saniye++;
+            if (saniye == 60)
+            {
+                saniye = 0;
+                dakika++;
+            }
+            if (dakika == 60)
+            {
+                dakika = 0;
+                saat++;
+            }
+
+            label2.Text = saat.ToString();
+            label3.Text = dakika.ToString();
+            label4.Text = saniye.ToString();
+
+            
+           
 
         }
     }
